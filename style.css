@@ -1,0 +1,47 @@
+
+body{
+    background-image: url('weatherBg.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover; /* Adjust the background size to cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /*Prevent the background image from repeating*/
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Set */
+}
+.title{
+    color: white;
+}
+.card-header{
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    color: white;
+}
+
+.navbar-brand {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    transition: transition 0.3s ease-in-out;
+  }
+  .navbar-brand:hover
+{
+    transform: scale(1.1),0.3s;
+}
+  /* Define the pseudo-element that will create the animated border */
+  .navbar-brand::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; /* Initially positioned outside the element */
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #d68686;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+  }
+
+  /* Define the styles for the pseudo-element on hover */
+  .navbar-brand:hover::before {
+    left: 00%; /* Move the border to the right on hover */
+  }
